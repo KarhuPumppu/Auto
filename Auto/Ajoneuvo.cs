@@ -6,20 +6,30 @@ using System.Threading.Tasks;
 
 namespace Auto
 {
-    internal class Ajoneuvo
+    public class Ajoneuvo
     {
-        public Ajoneuvo(int vuosimalli, string merkki, string malli, int nopeus)
+        public Ajoneuvo(int vuosimalli, string merkki, string malli, int Nopeus)
         {
             Vuosimalli = vuosimalli;
             Merkki = merkki;
             Malli = malli;
-            Nopeus = nopeus;
+            Nopeus = Nopeus;
         }
 
         public int Vuosimalli { get; set; }
         public string Merkki { get; set; }
         public string Malli  { get; set; }
         public int Nopeus{ get; set; }
+       
+        public int NopeudenNosto()
+        {
+            return Nopeus+5;
+
+        }
     }
-   public void 
+   
+    
+    
+        
+    
 }

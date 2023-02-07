@@ -1,9 +1,11 @@
-﻿using System.Security.AccessControl;
+﻿using System.Runtime.CompilerServices;
+using System.Security.AccessControl;
 
 int nopeus=0;
 int luku;
 char kirjain;
 bool jatkuu;
+
 
 Console.WriteLine("Tästä lähtee");
 do
@@ -17,14 +19,14 @@ do
     switch (kirjain)
     {
         case 'a':
-          nopeus=
-            nopeus+5;
+            NopeudenNosto();
+          
+            
          break;
 
         case 'b':
-          nopeus=
-            nopeus-5; 
-         break;
+           NopeudenLasku(); 
+            break;
 
         default:
          nopeus = 0; break;
@@ -66,3 +68,16 @@ do
     }
 
 } while (jatkuu) ;
+
+
+
+ int NopeudenNosto()
+{
+    return nopeus =nopeus+ 5;
+
+}
+int NopeudenLasku()
+{
+    return nopeus = nopeus - 5;
+
+}
