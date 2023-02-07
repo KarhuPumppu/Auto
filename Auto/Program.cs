@@ -48,7 +48,7 @@ do
         if (nopeus <=-1)
 
         {
-            Console.WriteLine("et saa mennä hiljempaa kuin 0 KM/h");
+            Console.WriteLine("et voi mennä hiljempaa kuin 0 KM/h");
             nopeus = 0;
             break;
         }
@@ -70,7 +70,7 @@ do
 } while (jatkuu) ;
 
 
-
+//metodit nostamaan ja laskemaan nopeutta
  int NopeudenNosto()
 {
     return nopeus =nopeus+ 5;
